@@ -3,16 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kessler & Finch — Roastery & Brew Goods</title>
+<title>Our Roast — Kessler & Finch</title>
 <link rel="stylesheet" href="style.css">
 
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xgiw0sv73h");
-</script>
+<!-- MICROSOFT CLARITY: paste tracking snippet here (same as index.html) -->
+
 </head>
 <body>
 
@@ -20,9 +15,9 @@
   <div class="nav">
     <a href="index.html" class="brand">Kessler <span>&</span> Finch</a>
     <nav class="nav-links">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="shop.html">Shop</a>
-      <a href="about.html">Our Roast</a>
+      <a href="about.html" class="active">Our Roast</a>
       <a href="contact.html">Visit Us</a>
     </nav>
     <div class="nav-actions">
@@ -34,27 +29,41 @@
   </div>
 </header>
 
-<section class="hero">
-  <div>
-    <div class="hero-eyebrow">Small-batch since 2019</div>
-    <h1>Coffee roasted<br>in single origins.</h1>
-    <p>We source directly from growers in Ethiopia, Colombia and Sumatra, roast in batches under 12kg, and ship within 48 hours of the drum. This is a demo storefront — nothing here ships, nothing is charged.</p>
-    <div class="hero-cta">
-      <a href="shop.html" class="btn-primary">Shop the roast</a>
-      <a href="about.html" class="btn-ghost">Our process</a>
+<div class="page-head">
+  <div class="hero-eyebrow">How we roast</div>
+  <h1>A short, honest process</h1>
+  <p>No mystery blends, no warehouse stock. Every bag is roasted, bagged, and shipped on a schedule you can trace back to the harvest.</p>
+</div>
+
+<section class="section" style="padding-top:20px;">
+  <div class="grid" style="grid-template-columns: repeat(3,1fr);">
+    <div class="card" style="padding:26px;">
+      <div class="card-tag">Step 01</div>
+      <div class="card-title" style="margin:8px 0;">Source</div>
+      <div class="card-desc">We buy from three growing regions directly, paying above fair-trade minimums each season. Relationships with growers run 4+ years deep, so pricing is agreed before harvest, not after.</div>
     </div>
-  </div>
-  <div class="hero-art">
-    <div class="hero-art-label">Current release — Yirgacheffe, washed, harvested March 2026</div>
+    <div class="card" style="padding:26px;">
+      <div class="card-tag">Step 02</div>
+      <div class="card-title" style="margin:8px 0;">Roast</div>
+      <div class="card-desc">Batches stay under 12kg on a 1957 drum roaster, profiled per lot rather than by a fixed curve. Each roast is cupped same-day against a reference standard.</div>
+    </div>
+    <div class="card" style="padding:26px;">
+      <div class="card-tag">Step 03</div>
+      <div class="card-title" style="margin:8px 0;">Ship</div>
+      <div class="card-desc">Bagged and shipped within 48 hours of roast date — never from a warehouse shelf. Every bag carries the roast date printed on the seal.</div>
+    </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" style="padding-top:0;">
   <div class="section-head">
-    <h2>Fan favorites</h2>
-    <p>The four roasts customers reorder most.</p>
+    <h2>Try the current release</h2>
+    <p>Everything above goes into what's in the shop this week.</p>
   </div>
-  <div class="grid" id="productGrid"></div>
+  <div style="display:flex; gap:14px;">
+    <a href="shop.html" class="btn-primary">Browse the shop</a>
+    <a href="contact.html" class="btn-ghost">Visit the tasting room</a>
+  </div>
 </section>
 
 <footer>
@@ -72,7 +81,6 @@
   </div>
 </footer>
 
-<!-- Cart Drawer -->
 <div class="overlay" id="overlay"></div>
 <div class="drawer" id="cartDrawer">
   <div class="drawer-head">
@@ -86,7 +94,6 @@
   </div>
 </div>
 
-<!-- Login Modal -->
 <div class="modal-overlay" id="loginModal">
   <div class="modal">
     <button class="modal-close" id="closeLogin">&times;</button>
@@ -109,8 +116,5 @@
 <div class="toast" id="toast"></div>
 
 <script src="script.js"></script>
-<script>
-  renderProductGrid('productGrid', [1, 2, 6, 5]);
-</script>
 </body>
 </html>

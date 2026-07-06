@@ -3,16 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kessler & Finch — Roastery & Brew Goods</title>
+<title>Shop — Kessler & Finch</title>
 <link rel="stylesheet" href="style.css">
 
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xgiw0sv73h");
-</script>
+<!-- MICROSOFT CLARITY: paste tracking snippet here (same as index.html) -->
+
 </head>
 <body>
 
@@ -20,8 +15,8 @@
   <div class="nav">
     <a href="index.html" class="brand">Kessler <span>&</span> Finch</a>
     <nav class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="shop.html">Shop</a>
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
       <a href="about.html">Our Roast</a>
       <a href="contact.html">Visit Us</a>
     </nav>
@@ -34,26 +29,13 @@
   </div>
 </header>
 
-<section class="hero">
-  <div>
-    <div class="hero-eyebrow">Small-batch since 2019</div>
-    <h1>Coffee roasted<br>in single origins.</h1>
-    <p>We source directly from growers in Ethiopia, Colombia and Sumatra, roast in batches under 12kg, and ship within 48 hours of the drum. This is a demo storefront — nothing here ships, nothing is charged.</p>
-    <div class="hero-cta">
-      <a href="shop.html" class="btn-primary">Shop the roast</a>
-      <a href="about.html" class="btn-ghost">Our process</a>
-    </div>
-  </div>
-  <div class="hero-art">
-    <div class="hero-art-label">Current release — Yirgacheffe, washed, harvested March 2026</div>
-  </div>
-</section>
+<div class="page-head">
+  <div class="hero-eyebrow">Full catalog</div>
+  <h1>The current lineup</h1>
+  <p>Six roasts, three brew tools. Everything rotates seasonally with the harvest.</p>
+</div>
 
-<section class="section">
-  <div class="section-head">
-    <h2>Fan favorites</h2>
-    <p>The four roasts customers reorder most.</p>
-  </div>
+<section class="section" style="padding-top:20px;">
   <div class="grid" id="productGrid"></div>
 </section>
 
@@ -72,7 +54,6 @@
   </div>
 </footer>
 
-<!-- Cart Drawer -->
 <div class="overlay" id="overlay"></div>
 <div class="drawer" id="cartDrawer">
   <div class="drawer-head">
@@ -86,7 +67,6 @@
   </div>
 </div>
 
-<!-- Login Modal -->
 <div class="modal-overlay" id="loginModal">
   <div class="modal">
     <button class="modal-close" id="closeLogin">&times;</button>
@@ -110,7 +90,7 @@
 
 <script src="script.js"></script>
 <script>
-  renderProductGrid('productGrid', [1, 2, 6, 5]);
+  renderProductGrid('productGrid');
 </script>
 </body>
 </html>

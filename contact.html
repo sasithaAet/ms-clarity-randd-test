@@ -3,16 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kessler & Finch — Roastery & Brew Goods</title>
+<title>Visit Us — Kessler & Finch</title>
 <link rel="stylesheet" href="style.css">
 
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xgiw0sv73h");
-</script>
+<!-- MICROSOFT CLARITY: paste tracking snippet here (same as index.html) -->
+
 </head>
 <body>
 
@@ -20,10 +15,10 @@
   <div class="nav">
     <a href="index.html" class="brand">Kessler <span>&</span> Finch</a>
     <nav class="nav-links">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="shop.html">Shop</a>
       <a href="about.html">Our Roast</a>
-      <a href="contact.html">Visit Us</a>
+      <a href="contact.html" class="active">Visit Us</a>
     </nav>
     <div class="nav-actions">
       <button class="icon-btn" id="loginTrigger">Log in</button>
@@ -34,28 +29,38 @@
   </div>
 </header>
 
-<section class="hero">
-  <div>
-    <div class="hero-eyebrow">Small-batch since 2019</div>
-    <h1>Coffee roasted<br>in single origins.</h1>
-    <p>We source directly from growers in Ethiopia, Colombia and Sumatra, roast in batches under 12kg, and ship within 48 hours of the drum. This is a demo storefront — nothing here ships, nothing is charged.</p>
-    <div class="hero-cta">
-      <a href="shop.html" class="btn-primary">Shop the roast</a>
-      <a href="about.html" class="btn-ghost">Our process</a>
-    </div>
-  </div>
-  <div class="hero-art">
-    <div class="hero-art-label">Current release — Yirgacheffe, washed, harvested March 2026</div>
-  </div>
-</section>
+<div class="page-head">
+  <div class="hero-eyebrow">Get in touch</div>
+  <h1>Visit the tasting room</h1>
+  <p>Drop by, ask a question, or send us a note. This form doesn't send anywhere real — it's here so you have a natural "exit page" to test in your analytics.</p>
+</div>
 
-<section class="section">
-  <div class="section-head">
-    <h2>Fan favorites</h2>
-    <p>The four roasts customers reorder most.</p>
+<div class="contact-wrap">
+  <form class="contact-form" id="contactForm">
+    <div class="field">
+      <label>Name</label>
+      <input type="text" placeholder="Your name" required>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com" required>
+    </div>
+    <div class="field">
+      <label>Message</label>
+      <textarea placeholder="What's on your mind?" required></textarea>
+    </div>
+    <button type="submit" class="btn-primary" style="width:100%; text-align:center;">Send message</button>
+    <div class="form-success" id="contactSuccess">Thanks — this is a demo form, so nothing was actually sent.</div>
+  </form>
+
+  <div class="contact-info">
+    <h3>Roastery & Tasting Room</h3>
+    <p><b>Address</b><br>124 Galle Road, Colombo, Sri Lanka</p>
+    <p><b>Hours</b><br>Tue–Sun, 8am – 5pm</p>
+    <p><b>Email</b><br>demo@kesslerfinch.test</p>
+    <p style="margin-top:20px; color:#9c8b7d; font-size:12px;">All details on this page are placeholder content for demo/testing purposes only.</p>
   </div>
-  <div class="grid" id="productGrid"></div>
-</section>
+</div>
 
 <footer>
   <div class="footer-inner">
@@ -72,7 +77,6 @@
   </div>
 </footer>
 
-<!-- Cart Drawer -->
 <div class="overlay" id="overlay"></div>
 <div class="drawer" id="cartDrawer">
   <div class="drawer-head">
@@ -86,7 +90,6 @@
   </div>
 </div>
 
-<!-- Login Modal -->
 <div class="modal-overlay" id="loginModal">
   <div class="modal">
     <button class="modal-close" id="closeLogin">&times;</button>
@@ -109,8 +112,5 @@
 <div class="toast" id="toast"></div>
 
 <script src="script.js"></script>
-<script>
-  renderProductGrid('productGrid', [1, 2, 6, 5]);
-</script>
 </body>
 </html>
